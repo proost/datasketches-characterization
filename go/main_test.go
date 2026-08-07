@@ -84,3 +84,15 @@ func TestTDigestDoubleUpdateSpeedRunner(t *testing.T) {
 func TestTDigestDoubleMergeSpeedRunner(t *testing.T) {
 	jobs["tdigest_double_merge_speed_profile"].run()
 }
+
+func TestBloomFilterAccuracyRunner(t *testing.T) {
+	jobs["bloom_filter_accuracy_profile"].run()
+}
+
+func TestBloomFilterUpdateSpeedRunner(t *testing.T) {
+	jobs["bloom_filter_update_speed_profile"].run()
+}
+
+func TestBloomFilterSpaceRunner(t *testing.T) {
+	jobs["bloom_filter_space_profile"].run()
+}

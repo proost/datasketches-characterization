@@ -166,7 +166,7 @@ This will compile and link the C++ characterization executable.
 ## Build Instructions (Go)
 
 ### Dependencies
-* Go 1.24.9 or later is required to compile the Go code.
+* Go 1.25.0 or later is required to compile the Go code.
 
 ### Build
 * The project uses Go modules, so you can build the project by running the following command:
