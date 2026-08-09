@@ -266,6 +266,59 @@ var (
 				numSketches:       32,
 			},
 		),
+		"bloom_filter_accuracy_profile": MustNewBloomFilterAccuracyProfile(
+			filterJobConfig{
+				lgU:      20,
+				capacity: 0.8,
+
+				lgMinT: 0,
+				lgMaxT: 0,
+				tppo:   1,
+
+				lgMinBpU: 1,
+				lgMaxBpU: 5,
+
+				minNumHashes: 4,
+				maxNumHashes: 24,
+			},
+		),
+		"bloom_filter_update_speed_profile": MustNewBloomFilterUpdateSpeedProfile(
+			filterSpeedJobConfig{
+				lgMinU: 0,
+				lgMaxU: 20,
+				uppo:   16,
+
+				lgMinT: 6,
+				lgMaxT: 12,
+
+				lgMinBpU: 4,
+				lgMaxBpU: 20,
+
+				numSketches: 1,
+
+				numBits:   16777216,
+				numHashes: 16,
+			},
+		),
+		"bloom_filter_space_profile": MustNewBloomFilterSpaceProfile(
+			filterSpaceJobConfig{
+				targetFpp: 1e-3,
+
+				lgMinU: 0,
+				lgMaxU: 20,
+				uppo:   10,
+
+				lgMinT: 10,
+				lgMaxT: 14,
+				tppo:   1,
+
+				lgMinBpU: 1,
+				lgMaxBpU: 5,
+
+				numHashesDelta: -4,
+				seed:           348675132,
+			},
+		),
 	}
 )
 

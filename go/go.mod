@@ -16,11 +16,12 @@
 //
 module github.com/apache/datasketches-characterization/datasketches-characterization-go
 
-go 1.24.11
+go 1.25.0
 
-require github.com/apache/datasketches-go v0.0.0-20260117014825-fabb7290e16c
+require github.com/apache/datasketches-go v0.2.0
 
 require (
+	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/twmb/murmur3 v1.1.8 // indirect
-	golang.org/x/exp v0.0.0-20250408133849-7e4ce0ab07d0 // indirect
+	golang.org/x/exp v0.0.0-20260727155853-b88d891fe743 // indirect
 )
